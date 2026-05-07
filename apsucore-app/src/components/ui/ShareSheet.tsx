@@ -1,4 +1,4 @@
-import { Link2, MessageCircle, AtSign, ExternalLink, X } from 'lucide-react'
+import { Link2, MessageCircle, AtSign, ExternalLink } from 'lucide-react'
 import { useToast } from '../../lib/toast'
 
 interface Props {

@@ -13,7 +13,7 @@ interface Category {
 interface Props {
   category: Category
   onClose: () => void
-  onNav: (screen: Screen) => void
+  onNav: (screen: Screen, state?: Record<string, unknown>) => void
 }
 
 const TYPE_MAP: Record<string, string[]> = {
