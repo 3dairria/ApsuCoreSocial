@@ -1,0 +1,7 @@
+apsucore-app/
+*.html
+PLAN.md
+SECURITY.md
+DEPLOYMENT.md
+*.md
+placesbot/

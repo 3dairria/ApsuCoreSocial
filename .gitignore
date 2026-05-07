@@ -1,0 +1,29 @@
+# Local only — never commit
+extra/
+code/
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Environment secrets
+server/.env.local
+server/.env.production
+apsucore-app/.env.local
+apsucore-app/.env.production
+.env
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
