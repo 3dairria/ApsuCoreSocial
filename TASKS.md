@@ -6,7 +6,12 @@
 ---
 
 ## DOING
-_Nothing active. Next: Session 18._
+- [ ] **Oracle Cloud** — account aanmaken (vastgelopen op hun site, wordt hervat)
+  - Regio kiezen: Frankfurt / London
+  - VM aanmaken (Ampere A1, Always Free)
+  - PostgreSQL + Node.js installeren
+  - Backend deployen + env vars instellen
+  - Vercel `VITE_API_URL` invullen met Oracle backend URL
 
 ---
 
@@ -131,6 +136,19 @@ _Nothing active. Next: Session 18._
 - [x] ComposeScreen: tRPC mutation, real user from localStorage
 - [x] notifications.unreadCount protectedProcedure
 - [x] Live unread badge in App.tsx (enabled only when authed)
+
+### Session 18 (2026-05-07/08) — Bugfixes + Vercel Live
+- [x] App.tsx: `trpc` import ontbrak (ReferenceError fix)
+- [x] server/src/db/index.ts: DB pad was `../../../` (projectroot, leeg) → gefixed naar `../../` (server/apsucore.db)
+- [x] Demo user passwordHash was NULL in DB → bcrypt hash voor demo1234 gezet
+- [x] vercel.json verplaatst naar projectroot (stond in apsucore-app/, werd niet gevonden)
+- [x] Vercel buildCommand: server npm install toegevoegd zodat @server alias werkt
+- [x] CategoryFeed.tsx: onNav type miste tweede parameter → gefixed
+- [x] ShareSheet.tsx: ongebruikte X import verwijderd
+- [x] loading="lazy" verwijderd uit 5 extra schermen (CreatorProfile, Profile, PostDetail, Discover, Collections)
+- [x] Vercel live: apsu-core-social.vercel.app ✅
+- [x] GitHub repo: github.com/3dairria/ApsuCoreSocial ✅
+- [ ] Oracle Cloud: account aanmaken gepauzeerd → hervat volgende sessie
 
 ### Session 17 (2026-05-07) — Deployment Infrastructure
 - [x] server/src/db/schema.pg.ts (PostgreSQL schema with pgEnum)
